@@ -1,0 +1,888 @@
+Administrator@DESKTOP-PNSMDPV MINGW64 ~
+$ pwd
+/c/Users/Administrator
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~
+$ mkdir training
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer0000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer0000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ training/
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~
+$ /training
+bash: /training: No such file or directory
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~
+$ pwd
+/c/Users/Administrator
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~
+$ cd training
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ mkdir Devops
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ cd Devops
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/training/Devop
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ notepad second.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ notepad thierd.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        second.txt
+        thierd.txt
+
+nothing added to commit but untracked files present (use "git add" to tra
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   second.txt
+        new file:   thierd.txt
+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git commit -m "My first git commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@DESKTOP-PNnone)')
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git config --global user.name GIT-User01
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git config --global user.email deepshika.sharma92@gmail.com
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   second.txt
+        new file:   thierd.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   second.txt
+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git remote add origin https:\\github.com/Deep1964/Devops.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https:\github.com/Deep1964/Devops.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https:\github.com/Deep1964/Devops.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https:\github.com/Deep1964/Devops.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https:\github.com/Deep1964/Devops.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git commit -m "ABC"
+[master (root-commit) 49b0ed5] ABC
+ 2 files changed, 2 insertions(+)
+ create mode 100644 second.txt
+ create mode 100644 thierd.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git push -u origin master
+ssh: Could not resolve hostname https: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git remote -v
+origin  https:\github.com/Deep1964/Devops.git (fetch)
+origin  https:\github.com/Deep1964/Devops.git (push)
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git remote remove origin
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git remote add origin https://github.com/Deep1964/Devops.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 263 bytes | 263.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Deep1964/Devops.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ notepad.exe first
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   second.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   first.txt
+        modified:   second.txt
+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git commit -m "My country"
+[master 79644bb] My country
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 first.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 343 bytes | 343.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Deep1964/Devops.git
+   49b0ed5..79644bb  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ ssh-keygen -t rsa -C deepshika.sharma92@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Administrator/.ssh/id_rsa):
+Created directory '/c/Users/Administrator/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Administrator/.ssh/id_rsa
+Your public key has been saved in /c/Users/Administrator/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:CN3atYGWqT/k4ANbu1BbceSrzfvtrDwJz1pOLZL1iP4 deepshika.sharma92@gma
+The key's randomart image is:
++---[RSA 3072]----+
+|          .      |
+|     . . *       |
+|    . . B =      |
+|     . * + +     |
+|    . B S o .    |
+|     * O +.+ +   |
+|    o = = *+=.o  |
+|     . o o B=+   |
+|      .   ++E++  |
++----[SHA256]-----+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (13.234.210.38)' can't be establishe
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+Hi Deep1964! You've successfully authenticated, but GitHub does not provil access.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ pwd
+/c/Users/Administrator/training/Devops
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Devops (master)
+$ cd ..
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ pwd
+/c/Users/Administrator/training
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ git clone git@github.com:Deep1964/Project-repo.git
+Cloning into 'Project-repo'...
+Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+Meenremote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+a
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ pwd
+/c/Users/Administrator/training
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ ll
+total 0
+drwxr-xr-x 1 Administrator 197121 0 Apr 14 08:32 Devops/
+drwxr-xr-x 1 Administrator 197121 0 Apr 14 10:45 Project-repo/
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ git log
+fatal: not a git repository (or any of the parent directories): .git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ git logs
+git: 'logs' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ cd ^C
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ cd Project-repo
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ git remote -v
+origin  git@github.com:Deep1964/Project-repo.git (fetch)
+origin  git@github.com:Deep1964/Project-repo.git (push)
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ notepad.exe ABC
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ git commit -m "ABC"
+[main 6d8039f] ABC
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ABC.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ git push
+Enter passphrase for key '/c/Users/Administrator/.ssh/id_rsa':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:Deep1964/Project-repo.git
+   f58406c..6d8039f  main -> main
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ cd \
+> cd C:\Users\Administrator\training
+bash: cd: too many arguments
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ pwd
+/c/Users/Administrator/training/Project-repo
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Project-repo (main)
+$ cd ..
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ pwd
+/c/Users/Administrator/training
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ mkdir Blogs
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ ll
+total 0
+drwxr-xr-x 1 Administrator 197121 0 Apr 14 11:42 Blogs/
+drwxr-xr-x 1 Administrator 197121 0 Apr 14 08:32 Devops/
+drwxr-xr-x 1 Administrator 197121 0 Apr 14 10:48 Project-repo/
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ cd blogs
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/blogs
+$ cd ..
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ cd Blogs
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs
+$ notepad.exe Info.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs
+$ init status
+bash: init: command not found
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/training/Blogs
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ ll
+total 1
+-rw-r--r-- 1 Administrator 197121 6 Apr 14 11:43 Info.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Info.txt
+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git commit -m "Clone"
+[master (root-commit) 158d3ff] Clone
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Info.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote reposiing
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git remote add origin https://github.com/Deep1964/Project-repo.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 222.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Deep1964/Project-repo/pull/new/master
+remote:
+To https://github.com/Deep1964/Project-repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ notepad.exe user1
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ notepad.exe user1.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ ll
+total 2
+-rw-r--r-- 1 Administrator 197121 6 Apr 14 11:43 Info.txt
+-rw-r--r-- 1 Administrator 197121 5 Apr 14 12:22 user1.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   user1.txt
+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git commit -m "Changes1"
+[master b0690ad] Changes1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 user1.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Deep1964/Project-repo.git
+   158d3ff..b0690ad  master -> master
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git remote -v
+origin  https://github.com/Deep1964/Project-repo.git (fetch)
+origin  https://github.com/Deep1964/Project-repo.git (push)
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git remote remove origin
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git remote add origin https://github.com/Deep1964/Blogs.git
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 476 bytes | 238.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Deep1964/Blogs.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ notepad name.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git commit -m "Conflict"
+[master 1068a91] Conflict
+ 1 file changed, 1 insertion(+)
+ create mode 100644 name.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git pull
+Already up to date.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ notepad greeting.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git commit -m "Greetings"
+[master f0b333f] Greetings
+ 1 file changed, 1 insertion(+)
+ create mode 100644 greeting.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git remote -v
+origin  https://github.com/Deep1964/Blogs.git (fetch)
+origin  https://github.com/Deep1964/Blogs.git (push)
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ ls
+Info.txt  greeting.txt  name.txt  user1.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git push
+To https://github.com/Deep1964/Blogs.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Deep1964/Blogs.git
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository push
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 695 bytes | 19.00 KiB/s, done.
+From https://github.com/Deep1964/Blogs
+   b0690ad..e4f2ca9  master     -> origin/master
+CONFLICT (add/add): Merge conflict in greeting.txt
+Auto-merging greeting.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      greeting.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master|MERGING)
+$ notepad greeting.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master|MERGING)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master|MERGING)
+$ git commit -m "Resolved Conflict"
+[master 075c073] Resolved Conflict
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ git push
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 856 bytes | 428.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Deep1964/Blogs.git
+   e4f2ca9..075c073  master -> master
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Blogs (master)
+$ cd ..
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ cd devops
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ ls
+first.txt  second.txt  thierd.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ notepad first.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ notepad second.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+        modified:   second.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ git stash save "first and second"
+Saved working directory and index state On master: first and second
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ git stash list
+stash@{0}: On master: first and second
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ git stash ^C
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ git stash stash@{0}
+fatal: unknown subcommand: stash@{0}
+
+usage: git stash list [<options>]
+   or: git stash show [<options>] [<stash>]
+   or: git stash drop [-q|--quiet] [<stash>]
+   or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+   or: git stash branch <branchname> [<stash>]
+   or: git stash clear
+   or: git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [-m|--message <message>]
+          [--pathspec-from-file=<file> [--pathspec-file-nul]]
+          [--] [<pathspec>...]]
+   or: git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [<message>]
+
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/devops (master)
+$ cd ..
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ pwd
+/c/Users/Administrator/training
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ mkdir branch demo
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ mkdir Branch-Demo
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ ll
+total 0
+drwxr-xr-x 1 Administrator 197121 0 Apr 15 04:37 Blogs/
+drwxr-xr-x 1 Administrator 197121 0 Apr 15 05:59 Branch-Demo/
+drwxr-xr-x 1 Administrator 197121 0 Apr 15 05:33 Devops/
+drwxr-xr-x 1 Administrator 197121 0 Apr 14 10:48 Project-repo/
+drwxr-xr-x 1 Administrator 197121 0 Apr 15 05:59 branch/
+drwxr-xr-x 1 Administrator 197121 0 Apr 15 05:59 demo/
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ ^C
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training
+$ cd Branch-Demo
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/training/Branc.git/
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ touch master1.txt master2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git commit -m " Master branch commit"
+[master (root-commit) c901c2b]  Master branch commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 master1.txt
+ create mode 100644 master2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git log --oneline
+c901c2b (HEAD -> master)  Master branch commit
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ ^C
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git branch accenture
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git branch -v
+  accenture c901c2b  Master branch commit
+* master    c901c2b  Master branch commit
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git log --oneline
+c901c2b (HEAD -> master, accenture)  Master branch commit
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git checkout accenture
+Switched to branch 'accenture'
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ git log --oneline
+c901c2b (HEAD -> accenture, master)  Master branch commit
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ touch acc1.txt acc2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ git add .
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ git commit -m "adding accenture branch"
+[accenture 80472c3] adding accenture branch
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 acc1.txt
+ create mode 100644 acc2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ git log --oneline
+80472c3 (HEAD -> accenture) adding accenture branch
+c901c2b (master)  Master branch commit
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ git checkout master
+Switched to branch 'master'
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ ll
+total 0
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master1.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git checkout accenture
+Switched to branch 'accenture'
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ ll
+total 0
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:16 acc1.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:16 acc2.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master1.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ git merge accenture
+Already up to date.
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ ll
+total 0
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:16 acc1.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:16 acc2.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master1.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (accenture)
+$ git checkout master
+Switched to branch 'master'
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git merge accenture
+Updating c901c2b..80472c3
+Fast-forward
+ acc1.txt | 0
+ acc2.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 acc1.txt
+ create mode 100644 acc2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ ll
+total 0
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:22 acc1.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:22 acc2.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master1.txt
+-rw-r--r-- 1 Administrator 197121 0 Apr 15 06:00 master2.txt
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ git branch -D accenture
+Deleted branch accenture (was 80472c3).
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ C:\Users\Administrator\Desktop\GIT & Jenkins\Installers
+[1] 2903
+bash: C:UsersAdministratorDesktopGIT: command not found
+bash: JenkinsInstallers: command not found
+[1]+  Exit 127                C:\Users\Administrator\Desktop\GIT
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$ cd C:\Users\Administrator\Desktop\GIT & Jenkins\Installers
+[1] 2910
+bash: cd: C:UsersAdministratorDesktopGIT: No such file or directory
+bash: JenkinsInstallers: command not found
+[1]+  Exit 1                  cd C:\Users\Administrator\Desktop\GIT
+
+Administrator@DESKTOP-PNSMDPV MINGW64 ~/training/Branch-Demo (master)
+$
